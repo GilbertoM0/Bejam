@@ -267,7 +267,7 @@ a:focus {
   background-color: #000000;
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
   .slider_section .custom_carousel-control {
     position: static;
     margin: 30px auto 0 auto;
@@ -282,9 +282,9 @@ a:focus {
   .slider_section .custom_carousel-control .carousel-control-next {
     margin: 0 10px;
   }
-}
+} */
 
-@media (max-width: 577px) {
+@media (max-width: 1300px) {
   .slider_section .custom_carousel-control {
     position: static;
     margin: 20px auto 0 auto;
