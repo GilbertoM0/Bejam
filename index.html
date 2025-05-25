@@ -635,10 +635,33 @@
       });
     }
   </script>
-  <!-- google map js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
-  </script>
-  <!-- end google map js -->
+
+
+
+
+<!-- Mapa visible en la página -->
+<div id="map" style="height: 400px; width: 100%;"></div>
+
+<!-- Script con la función de inicialización -->
+<script>
+  function initMap() {
+    var ubicacion = { lat: 19.983249, lng: -102.706295 }; // Instituto Tecnológico de Jiquilpan
+    var mapa = new google.maps.Map(document.getElementById("map"), {
+      zoom: 18,
+      center: ubicacion,
+    });
+    var marcador = new google.maps.Marker({
+      position: ubicacion,
+      map: mapa,
+      title: "Instituto Tecnológico de Jiquilpan"
+    });
+  }
+</script>
+
+<!-- google map js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap" async defer></script>
+<!-- end google map js -->
+  </body>
 </body>
 
 </html>
