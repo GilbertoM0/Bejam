@@ -284,6 +284,23 @@ a:focus {
   }
 }
 
+@media (max-width: 1300px) {
+  .slider_section .custom_carousel-control {
+    position: static;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
+  .slider_section .custom_carousel-control .carousel-control-prev,
+  .slider_section .custom_carousel-control .carousel-control-next {
+    margin: 0 8px;
+  }
+}
+
 /* end slider section */
 
 
